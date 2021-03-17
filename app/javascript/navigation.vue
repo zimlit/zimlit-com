@@ -50,7 +50,7 @@ export default {
     margin: 0.5em 1em 0.5em 1em;
     background: gray;
     display: inline-block;
-    padding: 1em;
+    padding: 0.5em 1em 0.5em 1em;
     border-radius: 5px;
   }
 
@@ -61,6 +61,7 @@ export default {
   ul {
     list-style: none;
     text-align: center;
+    padding: 0em;
   }
 
 </style>
