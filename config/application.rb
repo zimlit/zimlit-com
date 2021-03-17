@@ -1,7 +1,6 @@
 require_relative "boot"
 
 require "rails/all"
-require 'rack-rewrite'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -11,9 +10,6 @@ module ZimlitCom
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
-    config.middleware.insert_before(Rack::Runtime, Rack::Rewrite) do
-      r301 'https://zimlit-com-rails.herokuapp.com/', 'http://zimlit.com/'
-    end
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
