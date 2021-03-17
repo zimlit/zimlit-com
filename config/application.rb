@@ -12,7 +12,7 @@ module ZimlitCom
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
     config.middleware.insert_before(Rack::Runtime, Rack::Rewrite) do
-      r301 'zimlit-com-rails.herokuapp.com', 'www.zimlit.com'
+      r301 'https://zimlit-com-rails.herokuapp.com/', 'http://zimlit.com/'
     end
     # Configuration for the application, engines, and railties goes here.
     #
