@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'cubing', to: 'cubing#index'
   get 'coding', to: 'coding#index'
   root to: 'home#index'
   get 'home/index'
