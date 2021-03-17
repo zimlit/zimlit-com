@@ -1,9 +1,9 @@
 import Vue from 'vue'
-import App from '../app.vue'
+import Coding from '../coding.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
-    render: h => h(App)
+    render: h => h(Coding)
   }).$mount()
   document.body.appendChild(app.$el)
 

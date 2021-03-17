@@ -2,6 +2,11 @@
   <div class=navbar>
     <ul>
       <li class="nav-item">
+        <a href="/">
+          home
+        </a>
+      </li>
+      <li class="nav-item">
         <a href="/coding">
           coding
         </a>
@@ -38,6 +43,7 @@ export default {
     margin: 1em;
     border-radius: 25px;
     background: #555;
+    font-size: 2vw;
   }
 
   .nav-item {
@@ -54,14 +60,7 @@ export default {
 
   ul {
     list-style: none;
+    text-align: center;
   }
 
-  a {
-    text-decoration: none;
-    color: #369;
-  }
-
-  a:active {
-    text-decoration: underline;
-  }
 </style>

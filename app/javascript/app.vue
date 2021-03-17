@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <navigation />
+    <Navigation />
     <h1 class="welcome">
       Zimlit.com
       <p>coding, cubing, conlanging, conworlding</p>
@@ -9,13 +9,12 @@
 </template>
 
 <script>
-import navigation from './navigation'
+import Navigation from './navigation'
 
 export default {
-
   components: {
-    navigation
-  }
+    Navigation
+  },
 }
 </script>
 

@@ -20,3 +20,28 @@ body {
 * {
   font-family: 'roboto', sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: #369;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.sect {
+  background: #555;
+  margin: 2em 1em;
+  padding: .5em .5em 10em;
+  border-radius: 25px;
+}
+
+.label {
+  text-align: center;
+  text-decoration: underline;
+  color: #575;
+  margin-bottom: 2em;
+}
+
+
