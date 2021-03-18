@@ -3,10 +3,10 @@ class ApplicationController < ActionController::Base
   helper_method :logged_in?
 
   def current_user
-    User.find_by(id: session[:user_id])
+     render json: {current: User.find_by(id: session[:user_id])}; return
   end
 
   def logged_in?
-    !current_user.nil?
+    render json: {logged_in: !User.find_by(id: session[:user_id]).nil?};
   end
 end
